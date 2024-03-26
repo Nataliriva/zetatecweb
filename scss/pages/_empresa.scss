@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a{text-decoration: none;}
+  
+  ul,
+  ol{
+    list-style: none;
+  }
+  
+  .body-empresa{
+    background-color:black;
+}
+
+ .active {
+    color:aquamarine; 
+}
+ 
+
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+  
+    .imagenzeta-container {
+      width: 60%; // Ancho deseado para la imagen de ZETA TEC
+      display: flex;
+      justify-content: center; // Centra horizontalmente
+      align-items: center;
+     
+    
+    }
+    
+    .imagenzeta {
+      width: 70%; // La imagen ocupa todo el ancho del contenedor
+      height: auto; // Mantenemos la relación de aspecto
+      margin-top: -120px;
+    }
+    
+    .Imagenchapa {
+      width: 100%; // La imagen ocupa todo el ancho del contenedor
+      height: auto;
+      
+    }
+    
+    div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+}
+
+.Historia{
+  text-align:center;
+  color:white;
+  font-weight: 5px;
+  gap: 1rem;
+  
+}
+
+.footer-empresa{
+  text-align: center;
+    text-decoration: none;
+    color:beige;
+    margin-top:50px;
+  }
+
+  .logo_whatsapp {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    position: fixed; /* Mantenemos la posición fija */
+    right: 10px; /* Ajustamos la posición */
+    bottom: 10px; /* Ajustamos la posición */
+}
+
+// Media queries para tamaños de pantalla específicos
+@media (min-width: 1200px) {
+  .portada {
+      padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+  }
+  img {
+    padding: 0 100px;
+}
+}
+@media screen and (max-width: 350px) {
+  .portada {
+    flex-direction: column; // Cambia la dirección de los elementos en pantallas más pequeñas
+    img {
+      width: 80%; // Modifica el ancho de la imagen para pantallas más pequeñas
+    }
+    div {
+      width: 80%; // Modifica el ancho del contenedor de texto para pantallas más pequeñas
+    }
+  }
+  
+  .Historia {
+    font-size: 14px; // Modifica el tamaño de fuente para pantallas más pequeñas
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portada {
+    img {
+      width: 100%; // Modifica el ancho de la imagen para pantallas aún más pequeñas
+    }
+    div {
+      width: 100%; // Modifica el ancho del contenedor de texto para pantallas aún más pequeñas
+    }
+  }
+
+  .Historia {
+    font-size: 12px; // Modifica el tamaño de fuente para pantallas aún más pequeñas
+  }
+}
+

@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/*Estilo de pantalla con media*/
+@media (max-width: 350px) {
+  .todo {
+    width: 100%; /* Ajustamos el ancho */
+    padding: 0 20px; /* Añadimos relleno a los lados */
+  }
+  .lista {
+    justify-content: center; /* Centramos horizontalmente la lista */
+  }
+  .imagen {
+    width: 100%; /*la imagen ocupe todo el ancho disponible */
+  }
+}
+.resaltar {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+}
+
+.active {
+  color: aquamarine;
+}
+
+.fondo {
+  background-color: cornflowerblue;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(20, 10fr);
+  grid-template-rows: 40px;
+  text-decoration: underline;
+  color: rgb(21, 39, 54);
+  justify-items: end;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+}
+
+.todo {
+  width: 80%; /* Ancho del contenedor principal */
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  margin: auto; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Centrar verticalmente */
+}
+.todo .des {
+  color: black;
+  text-align: center;
+}
+.todo .imagen-de-placa-de-cobre {
+  width: 100%;
+  height: 50%;
+  margin: 20px 0;
+}
+.todo h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo_whatsapp {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/*Estilo de pantalla con media*/
+@media (min-width: 1200px) {
+  .todo {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 350px) {
+  .todo {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .lista {
+    justify-content: center;
+  }
+  .imagen-de-placa-de-cobre {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.bodyproducto {
+  background-color: cornflowerblue;
+}
+
+.boton {
+  background-color: darkslateblue;
+  padding: 0.8rem 1rem;
+  border: 2px solid black;
+  border-radius: 50px;
+  color: aliceblue;
+}
+
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.portada img {
+  width: 50%;
+}
+.portada div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.cajadeproductos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cajadeproductos h2 {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+}
+.cajadeproductos h3 {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+}
+.cajadeproductos .zinc-material {
+  width: 135%;
+  justify-content: top;
+}
+.cajadeproductos .zinc-material img {
+  width: 100%;
+  height: 180px;
+  display: flex;
+}
+.cajadeproductos .zinc-material div {
+  border-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.todos-productos {
+  display: flex;
+  overflow: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+  .portada img,
+  .portada div {
+    width: 80%;
+  }
+  .hederli {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .portada img,
+  .portada div {
+    width: 100%;
+  }
+  .hederli {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.active {
+  color: aquamarine;
+}
+
+.contactobody {
+  background-color: rgb(165, 187, 228);
+}
+
+.titulocontacto {
+  color: indigo;
+}
+
+.cuerpo {
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho del contenedor principal */
+  max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  margin: auto; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centrar verticalmente */
+}
+
+.logo_whatsapp {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  position: fixed; /* Mantenemos la posición fija */
+  right: 10px; /* Ajustamos la posición */
+  bottom: 10px; /* Ajustamos la posición */
+}
+
+@media (min-width: 1200px) {
+  .cuerpo {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 350px) {
+  .cuerpo {
+    padding: 0 20px; /* Añadido relleno a los lados para evitar que el contenido se pegue al borde de la pantalla */
+  }
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente los elementos del formulario */
+  justify-content: center; /* Centra verticalmente los elementos del formulario */
+  height: 100%; /* Ajusta la altura del contenedor para ocupar todo el espacio disponible */
+}
+
+form {
+  width: 80%; /* Ajusta el ancho del formulario  */
+  max-width: 500px; /* Ancho máximo del formulario para evitar que se vuelva demasiado ancho en pantallas grandes */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.body-empresa {
+  background-color: black;
+}
+
+.active {
+  color: aquamarine;
+}
+
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.portada .imagenzeta-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portada .imagenzeta {
+  width: 70%;
+  height: auto;
+  margin-top: -120px;
+}
+.portada .Imagenchapa {
+  width: 100%;
+  height: auto;
+}
+.portada div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.Historia {
+  text-align: center;
+  color: white;
+  font-weight: 5px;
+  gap: 1rem;
+}
+
+.footer-empresa {
+  text-align: center;
+  text-decoration: none;
+  color: beige;
+  margin-top: 50px;
+}
+
+.logo_whatsapp {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  position: fixed; /* Mantenemos la posición fija */
+  right: 10px; /* Ajustamos la posición */
+  bottom: 10px; /* Ajustamos la posición */
+}
+
+@media (min-width: 1200px) {
+  .portada {
+    padding: 0 100px; /* Por ejemplo, establece un relleno mayor en pantallas muy grandes */
+  }
+  img {
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .portada {
+    flex-direction: column;
+  }
+  .portada img {
+    width: 80%;
+  }
+  .portada div {
+    width: 80%;
+  }
+  .Historia {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .portada img {
+    width: 100%;
+  }
+  .portada div {
+    width: 100%;
+  }
+  .Historia {
+    font-size: 12px;
+  }
+}
+.active {
+  color: aquamarine;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+main section {
+  margin-bottom: 40px;
+}
+main section h1 {
+  color: #fff;
+}
+main section h2 {
+  color: #fff;
+}
+
+section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  color: #fff;
+  align-self: center;
+  max-width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+}
+section p {
+  margin-bottom: 5px;
+  color: #fff;
+  align-self: center;
+  max-width: 100%;
+  height: 80px;
+}
+section img {
+  align-self: center;
+  max-width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+section img:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=styles.css.map */

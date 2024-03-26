@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a{text-decoration: none;}
+  
+  ul,
+  ol{
+    list-style: none;
+  }
+  
+.bodyproducto{
+    background-color:cornflowerblue;
+}
+
+.boton {
+    background-color:darkslateblue;
+    padding: 0.8rem 1rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: aliceblue;
+}
+
+
+  
+
+    
+
+//*Portada//*
+.portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    img{
+        width: 50%;
+
+    }
+    div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+}
+
+
+//*Producto*//
+ @mixin flex-centar(){
+  display: flex;
+  color:black;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  padding: 3rem;
+
+ }
+
+ .cajadeproductos {
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+      @include flex-centar();      
+  }
+
+  h3 {
+    @include flex-centar(); 
+  }
+
+  .zinc-material {
+    width: 135%;
+    justify-content:top;
+   
+
+      img {
+        
+          width: 100%;
+          height: 180px;
+          display: flex;
+      }
+
+      div {
+          border-top: 2px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+      }
+  }
+}
+.todos-productos{
+    display: flex;
+    overflow:auto;
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+
+  
+
+  /* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    .portada img,
+    .portada div {
+      width: 80%; 
+    }
+  
+    .hederli {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .portada img,
+    .portada div {
+      width: 100%; 
+    }
+  
+    .hederli {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }

@@ -1,0 +1,95 @@
+.resaltar {
+    color: black;
+}
+
+$color_primario:indigo;
+
+h1 {
+    text-align: center;
+    text-decoration: none;
+    $color_primario:indigo;
+}
+
+.active {
+    color:aquamarine; 
+}
+
+
+//body*//
+.fondo{
+    background-color:cornflowerblue;
+
+}
+.lista {
+    display: grid;
+    grid-template-columns: repeat(20, 10fr);
+    grid-template-rows: 40px;
+    text-decoration: underline;
+    color: rgb(21, 39, 54);
+    justify-items: end;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.todo {
+    width: 80%; /* Ancho del contenedor principal */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: auto; /* Centrar horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Centrar verticalmente */
+
+    .des {
+        color: black;
+        text-align: center;
+    }
+    .imagen-de-placa-de-cobre {
+        width: 100%; 
+        height: 50%;
+        margin: 20px 0; 
+    }
+    h2 {
+        $color_primario:indigo;
+        text-align: center;
+        margin: 20px 0; 
+    }
+}
+
+
+.logo_whatsapp {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    position: fixed; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+
+/*Estilo de pantalla con media*/      
+@media (min-width: 1200px) {
+    .todo {
+        padding: 0 100px; 
+    }
+}
+@media (max-width: 350px) {  
+    .todo {
+            width: 100%; 
+            padding: 0 20px; 
+        }
+    
+        .lista {
+            justify-content: center; 
+        }
+    
+        .imagen-de-placa-de-cobre{
+            width: 100%; 
+        }
+    }

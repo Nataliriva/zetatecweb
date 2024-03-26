@@ -1,0 +1,18 @@
+
+/*Estilo de pantalla con media*/      
+
+@media (max-width: 350px) {  
+    .todo {
+            width: 100%; /* Ajustamos el ancho */
+            padding: 0 20px; /* Añadimos relleno a los lados */
+        }
+    
+        .lista {
+            justify-content: center; /* Centramos horizontalmente la lista */
+        }
+    
+        .imagen {
+            width: 100%; /*la imagen ocupe todo el ancho disponible */
+        }
+    }
+
