@@ -40,7 +40,7 @@
     .imagenzeta {
       width: 70%; // La imagen ocupa todo el ancho del contenedor
       height: auto; // Mantenemos la relación de aspecto
-      margin-top: -120px;
+      margin-top: -97px;
     }
     
     .Imagenchapa {
@@ -74,7 +74,7 @@
   }
 
   .logo_whatsapp {
-    width: 100px;
+    width: 15%;
     height: auto;
     margin: 10px;
     position: fixed; /* Mantenemos la posición fija */
@@ -99,6 +99,9 @@
     }
     div {
       width: 80%; // Modifica el ancho del contenedor de texto para pantallas más pequeñas
+    }
+    .logo_whatsapp{
+      width: 80%;
     }
   }
   
